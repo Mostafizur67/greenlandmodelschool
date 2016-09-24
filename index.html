@@ -36,6 +36,42 @@
 html, body {
    height: 100%;
 }
+.dropdown-toggle {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: White;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {background-color: Black}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: Black;
+}
 		</style>
 		</head>
 		<body>
@@ -127,6 +163,7 @@ html, body {
 								
 				<!-- Start of Left SideBar of the page -->
 								<div class="col-sm-3">
+									<div style="padding-bottom:12px;margin-left:80px">
 										<ul class="nav" id="menu">
 											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Home</span></a></li>
 											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">About School</span></a></li>
@@ -141,6 +178,7 @@ html, body {
 											</li>
 											<li><a href="#"><i class=""></i> <span class="glyphicon glyphicon-chevron-right">Photo Gallery</span></a></li>
 										</ul>
+										</div>
 									</div>
 									
 								<!-- End of Left SideBar  of the page -->
@@ -242,7 +280,18 @@ html, body {
 					<div class="col-md-12">
 							<div class="panel-body ">
 								<div class="row">
-									<div class="col-sm-2">Right Side </div>
+									<div class="col-sm-2 text-center">
+										<div style="margin-top:40px">
+										<div style="width:100%; height:auto; border:solid 1px #ccc; padding-bottom:12px;background:#EAF9FF;">
+										<h4 style="background:#1993BC; height:30px; color:#FFF;text-align:center; padding-top:3px; margin-top:-3px;">জাতীয় ই তথ্যকোষ</h4>
+										<div align="center"><a href="http://www.infokosh.gov.bd/" target="_blank" title="National E-Information" style="text-align:center;"><img src="images/e-tothokosh.jpg" width="160" height="59" alt="National E-Information" align="middle"/></a></div>
+										</div> </br>
+										<div style="width:100%; height:auto; border:solid 1px #ccc; padding-bottom:12px;background:#EAF9FF;"> 
+										<h5 style="background:#1993BC; height:30px; color:#FFF;text-align:center; padding-top:8px; margin-top:-3px; font-weight:bold;">Gov. Form Download</h5>
+										<div align="center"><a href="http://www.forms.gov.bd/" target="_blank" title="All Government Form Download" style="text-align:center;"><img src="http://www.notredamecollege-dhaka.com/asset/images/govform.jpg" width="160" height="46" alt="All Government Form Download" align="middle"/></a></div>
+										</div>
+										</div>
+									</div>
 									<div class="col-sm-7 text-center"> <h3><p class="text-success">Principal Message</P></h3>
 										<div class="row text-left">
 										<div class="col-sm-3"> <img src="images/Principal_image.jpg" class="img-rounded" alt="Principal image" width="150" height="150"></div>
@@ -254,22 +303,54 @@ html, body {
 										competent to take responsibility in all walks of life. We teach our student that nothing worthwhile can be achieved without a sense 
 										of discipline and we expect our student to conform to high disciplinary standards and cherish the values of tolerance,
 										compassion, respect, obedient and independent thinking </p>
-										<p> Md. Abed Hasan</p>
-										<p>Principal</p>
-										<p>green Land Model School</p>
+										<p><b> Md. Abed Hasan</br>
+										Principal</br>
+										Green Land Model School</b></p>
 										
 									</div>
 									
 									</div>
 									<div class="col-sm-3 text-center">
-									<span class="line">Important Notice</span></h1>
-									</div>
+										<div style="margin-top:40px">
+										<div style="width:100%; height:auto; border:solid 1px #ccc; padding-bottom:12px;background:#EAF9FF; border-radius:3px;margin-left:70px"> 
+										<h4 style="background:#D275A5; height:30px; color:#FFF;text-align:center; padding-top:3px; margin-top:-3px;">Latest Notice</h4>
+										
+										<div style="width:100%; height:auto; border:solid 1px #ccc; padding-bottom:12px;background:#EAF9FF; border-radius:3px;margin-top:-6px;"> 
+										
+										<div align="center">
+										<marquee  behavior="scroll" direction="up" scrolldelay="250" onMouseOver="this.stop();" onMouseOut="this.start();" style="text-align:center; height:150px; line-height:normal;">
+											 <ul style="margin-left:-20px;">
+												
+												 
+													<li style="margin-left:-0px; text-align:left;"><a href="" title="১   জুলাই  ২০১৬ সকাল ৮ টায় প্রথম বর্ষ এবং দুপুর ১ টায়  দ্বিতীয় বর্ষের ছাত্রদের ক্লাস অনুষ্ঠিত হবে।" target="_parent">১০ ই  জুলাই  ২০১৬ সকাল ৮ টায় প্রথম বর্ষ এবং দুপুর ১ টায়  দ্বিতীয় বর্ষের ছাত্রদের ক্লাস অনুষ্ঠিত হবে।</a></li>
+												 
+													<li style="margin-left:-0px; text-align:left;"><a href="" title="Admission Fee Details-2016" target="_parent">Admission Fee Details-2016</a></li>
+																		</ul>
+										</marquee></div>
+										</div>
+										</div>
 								</div>
+							</div>
+							</div>
 							</div>
 					</div>
 				</div>
 				</div>
 				<!-- End of Second container for Left SideBar , Main Contents and Right SideBar of the page -->
+				<script>
+				$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+				</script>
 				
 				</body>
 				</html>
