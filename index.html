@@ -36,113 +36,6 @@
 html, body {
    height: 100%;
 }
-
-.wrapper, .row {
-   height: 100%;
-   margin-left:0;
-   margin-right:0;
-}
-
-.wrapper:before, .wrapper:after,
-.column:before, .column:after {
-    content: "";
-    display: table;
-}
-
-.wrapper:after,
-.column:after {
-    clear: both;
-}
-
-#sidebar {
-    background-color: #eee;
-    padding-left: 0;
-    float: left;
-    min-height: 100%;
-}
-
-#sidebar .collapse.in {
-    display: inline;
-}
-
-#sidebar > .nav>li>a {
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-#main {
-    padding: 15px;
-    left: 0;
-}
-
-/*
- * off canvas sidebar
- * --------------------------------------------------
- */
-@media screen and (max-width: 768px) {
-    #sidebar {
-        min-width: 44px;
-    }
-    
-    #main {
-        width: 1%;
-        left: 0;
-    }
-    
-    #sidebar .visible-xs {
-       display:inline !important;
-    }
-    
-    .row-offcanvas {
-       position: relative;
-       -webkit-transition: all 0.4s ease-in-out;
-       -moz-transition: all 0.4s ease-in-out;
-       transition: all 0.4s ease-in-out;
-    }
-    
-    .row-offcanvas-left.active {
-       left: 45%;
-    }
-    
-    .row-offcanvas-left.active .sidebar-offcanvas {
-       left: -45%;
-       position: absolute;
-       top: 0;
-       width: 45%;
-    }
-} 
- 
- 
-@media screen and (min-width: 768px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
-
-  .row-offcanvas-left.active {
-    left: 3%;
-  }
-
-  .row-offcanvas-left.active .sidebar-offcanvas {
-    left: -3%;
-    position: absolute;
-    top: 0;
-    width: 3%;
-    text-align: center;
-    min-width:42px;
-  }
-  
-  #main {
-    left: 0;
-  }
-}
-/* off-canvas sidebar toggle */
-$('[data-toggle=offcanvas]').click(function() {
-    $('.row-offcanvas').toggleClass('active');
-    $('.collapse').toggleClass('in').toggleClass('hidden-xs').toggleClass('visible-xs');
-});
 		</style>
 		</head>
 		<body>
@@ -170,21 +63,33 @@ $('[data-toggle=offcanvas]').click(function() {
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href="#">WebSiteName</a>
+					  <a class="navbar-brand" href="#"></a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 					  <ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
 						<li class="dropdown">
-						  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+						  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academic Information<span class="caret"></span></a>
 						  <ul class="dropdown-menu">
-							<li><a href="#">Page 1-1</a></li>
-							<li><a href="#">Page 1-2</a></li>
-							<li><a href="#">Page 1-3</a></li>
+							<li><a href="#">Guideline for Parents</a></li>
+							<li><a href="#">Dress Code</a></li>
+							<li><a href="#">Study plan</a></li>
+							<li><a href="#">Academic Calendar</a></li>
+							<li><a href="#">Book List & Syllabus</a></li>
+							<li><a href="#">Class Routine</a></li>
 						  </ul>
 						</li>
-						<li><a href="#">Page 2</a></li>
-						<li><a href="#">Page 3</a></li>
+						<li class="dropdown">
+						  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admission<span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Fees and Payments</a></li>
+							<li><a href="#">Scholarship</a></li>
+							<li><a href="#">transfer procedure</a></li>
+						  </ul>
+						</li>
+						<li><a href="#">Co-Curriculum Activities</a></li>
+						<li><a href="#">Contact</a></li>
 					  </ul>
 					  <ul class="nav navbar-nav navbar-right">
 						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -204,8 +109,8 @@ $('[data-toggle=offcanvas]').click(function() {
 					<div class="col-md-12">
 							<div class="panel-body text-center">
 								<div class="row">
-									<div class="col-sm-1">Updates</div>
-									<div class="col-sm-11"><marquee> Admission gooing on.</marquee></div>
+									<div class="col-sm-2"><p class="bg-success"><b>Update Notice</b></p></div>
+									<div class="col-sm-10"><p class="bg-info"><marquee> Admission gooing on.</marquee></p></div>
 								</div>
 							</div>
 						</div>
@@ -223,26 +128,18 @@ $('[data-toggle=offcanvas]').click(function() {
 				<!-- Start of Left SideBar of the page -->
 								<div class="col-sm-3">
 										<ul class="nav" id="menu">
-											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Link 1</span></a></li>
-											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Stories</span></a></li>
-											<li><a href="#"><i class="fa fa-paperclip"></i> <span class="glyphicon glyphicon-chevron-right">Saved</span></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i> <span class="glyphicon glyphicon-chevron-right">Refresh</span></a></li>
+											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Home</span></a></li>
+											<li><a href="#"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">About School</span></a></li>
+											<li><a href="#"><i class="fa fa-paperclip"></i> <span class="glyphicon glyphicon-chevron-right">Exam Results</span></a></li>
+											<li><a href="#"><i class="fa fa-refresh"></i> <span class="glyphicon glyphicon-chevron-right">Latest News</span></a></li>
 											<li>
-												<a href="#" data-target="#item1" data-toggle="collapse"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Menu <span class="caret"></span></span></a>
+												<a href="#" data-target="#item1" data-toggle="collapse"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Administration <span class="caret"></span></span></a>
 												<ul class="nav nav-stacked collapse left-submenu" id="item1">
-													<li><a href="google.com">View One</a></li>
-													<li><a href="gmail.com">View Two</a></li>
+													<li><a href="google.com">Administration</a></li>
+													<li><a href="gmail.com">Staff Information</a></li>
 												</ul>
 											</li>
-											<li>
-												<a href="#" data-target="#item2" data-toggle="collapse"><i class="fa fa-list"></i> <span class="glyphicon glyphicon-chevron-right">Menu <span class="caret"></span></span></a>
-												<ul class="nav nav-stacked collapse" id="item2">
-													<li><a href="#">View One</a></li>
-													<li><a href="#">View Two</a></li>
-													<li><a href="#">View Three</a></li>
-												</ul>
-											</li>
-											<li><a href="#"><i class=""></i> <span class="glyphicon glyphicon-chevron-right">Link</span></a></li>
+											<li><a href="#"><i class=""></i> <span class="glyphicon glyphicon-chevron-right">Photo Gallery</span></a></li>
 										</ul>
 									</div>
 									
@@ -339,13 +236,28 @@ $('[data-toggle=offcanvas]').click(function() {
 					
 				<!-- End of Left SideBar , Main Contents and Right SideBar of the page -->
 				
+				<!-- Start of Second container for Left SideBar , Main Contents and Right SideBar of the page -->
 					<div class="container">
 					<div class="row">
 					<div class="col-md-12">
 							<div class="panel-body ">
 								<div class="row">
-									<div class="col-sm-3">Right Side </div>
-									<div class="col-sm-6 text-center"> Principals Talk</div>
+									<div class="col-sm-2">Right Side </div>
+									<div class="col-sm-7 text-center"> <h3><p class="text-success">Principal Message</P></h3>
+										<div class="row text-left">
+										<div class="col-sm-3"> <img src="images/Principal_image.jpg" class="img-rounded" alt="Principal image" width="150" height="150"></div>
+										 <p>Education is considered to be the core instrument of human development. Our objective at Notre Dame is the harmonious development of the intellectual, physical, social, moral and spiritual faculties of the students. At the heart of the institution is a core of shared values, which reflects our ethos and everything we do. These values foster high standards of behavior and achievement, 
+										 support a framework of respect, promote self-confidence and provide a warm, 
+										harmonious environment in which our student learn and grow.</p>
+										<p>Our approach is student-centered and we believe that the approach to motivating and getting the best out of the student is based on the positive 
+										reinforcement of good work and good behavior. Our endeavor will be to ensure that student grow in their full potential and be 
+										competent to take responsibility in all walks of life. We teach our student that nothing worthwhile can be achieved without a sense 
+										of discipline and we expect our student to conform to high disciplinary standards and cherish the values of tolerance,
+										compassion, respect, obedient and independent thinking </p>
+										
+									</div>
+									
+									</div>
 									<div class="col-sm-3 text-center">
 									<span class="line">Important Notice</span></h1>
 									</div>
@@ -354,6 +266,7 @@ $('[data-toggle=offcanvas]').click(function() {
 					</div>
 				</div>
 				</div>
+				<!-- End of Second container for Left SideBar , Main Contents and Right SideBar of the page -->
 				
 				</body>
 				</html>
