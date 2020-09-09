@@ -1,1 +1,1 @@
-This is developing a web site for School using Bootstrap.
+This is a web site for School using Bootstrap.
